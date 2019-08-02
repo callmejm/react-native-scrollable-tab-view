@@ -136,6 +136,7 @@ const ScrollableTabItem = createReactClass({
       accessibilityTraits='button'
       onPress={() => onPressHandler(page)}
       onLayout={onLayoutHandler}
+      activeOpacity={0.9}
     >
       <View style={[isTabActive ? styles.tab_selected : styles.tab, this.props.tabStyle, ]}>
         <Text style={[{color: textColor, fontWeight, }, textStyle, ]}>
@@ -221,7 +222,8 @@ module.exports = ScrollableTabItem;
 
 const styles = StyleSheet.create({
   scrollview:{
-    paddingHorizontal:15
+    paddingHorizontal:15,
+    // backgroundColor:"#ccc"
   },
   tab: {
     height: 42,
@@ -246,7 +248,7 @@ const styles = StyleSheet.create({
     overflow:'hidden'
   },
   container: {
-    height: 50,
+    height: 42,
     // borderWidth: 1,
     borderTopWidth: 0,
     borderLeftWidth: 0,
@@ -255,6 +257,6 @@ const styles = StyleSheet.create({
   },
   tabs: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'flex-start',
   },
 });
