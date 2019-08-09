@@ -74,7 +74,7 @@ Add new component is rounded scrollable tab **`ScrollableTabItem`** with extra p
 - **`inactiveWeight`** -inactive tab font weight
 
 ## Extra Demo
-<img src="https://media.giphy.com/media/f6UmpgEnkr3idLiLhj/giphy.gif width="256"/>
+<img src="./imgs/demo.gif" width="256"/>
  
 ## Props
 
