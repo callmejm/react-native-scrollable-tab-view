@@ -1,3 +1,5 @@
+## Note
+This library is not done by me, original is from https://github.com/ptomasroos/react-native-scrollable-tab-view
 
 ## react-native-scrollable-tab-view
 [![npm version](https://badge.fury.io/js/react-native-scrollable-tab-view.svg)](https://badge.fury.io/js/react-native-scrollable-tab-view)
@@ -101,5 +103,3 @@ Add new component is rounded scrollable tab **`ScrollableTabItem`** with extra p
 - **`scrollWithoutAnimation`** _(Bool)_ - on tab press change tab without animation.
 - **`prerenderingSiblingsNumber`** _(Integer)_ - pre-render nearby # sibling, `Infinity` === render all the siblings, default to 0 === render current page.
 
-## Note
-This library is not done by me, original is from https://github.com/ptomasroos/react-native-scrollable-tab-view
