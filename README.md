@@ -74,8 +74,8 @@ Add new component is rounded scrollable tab **`ScrollableTabItem`** with extra p
 - **`inactiveWeight`** -inactive tab font weight
 
 ## Extra Demo
-<iframe src="https://giphy.com/embed/f6UmpgEnkr3idLiLhj" width="224" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/f6UmpgEnkr3idLiLhj">via GIPHY</a></p>
-
+<img src="https://media.giphy.com/media/f6UmpgEnkr3idLiLhj/giphy.gif width="256"/>
+ 
 ## Props
 
 - **`renderTabBar`** _(Function:ReactComponent)_ - accept 1 argument `props` and should return a component to use as
