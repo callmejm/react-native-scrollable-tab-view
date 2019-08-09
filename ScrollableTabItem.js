@@ -125,9 +125,9 @@ const ScrollableTabItem = createReactClass({
   },
 
   renderTab(name, page, isTabActive, onPressHandler, onLayoutHandler) {
-    const { activeTextColor, inactiveTextColor, textStyle, } = this.props;
-    const textColor = isTabActive ? "#fff" : "#8AD0D6";
-    const fontWeight = isTabActive ? 'normal' : 'normal';
+    const { activeTextColor, inactiveTextColor, textStyle, tabSelectedColor, tabColor, activeWeight, inactiveWeight} = this.props;
+    const textColor = isTabActive ? activeTextColor ? activeTextColor : "#fff" : inactiveTextColor ? inactiveTextColor : "#8AD0D6";
+    const fontWeight = isTabActive ? activeWeight ? activeWeight : 'normal' : inactiveWeight ? inactiveWeight : 'normal';
 
     return <Button
       key={`${name}_${page}`}
@@ -138,7 +138,7 @@ const ScrollableTabItem = createReactClass({
       onLayout={onLayoutHandler}
       activeOpacity={0.9}
     >
-      <View style={[isTabActive ? styles.tab_selected : styles.tab, this.props.tabStyle, ]}>
+      <View style={[isTabActive ? [styles.tab_selected,{color:tabSelectedColor}] : [styles.tab,{color:tabColor}], this.props.tabStyle, ]}>
         <Text style={[{color: textColor, fontWeight, }, textStyle, ]}>
           {name}
         </Text>
