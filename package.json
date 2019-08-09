@@ -52,7 +52,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "callmejm_rn-scrollable-tab-view",
+  "name": "react-native-scrollable-tab-view",
   "peerDependencies": {
     "react-native": ">=0.20.0"
   },
