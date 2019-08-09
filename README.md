@@ -66,7 +66,7 @@ To start you can just copy [DefaultTabBar](https://github.com/skv-headless/react
 
 [FacebookExample](https://github.com/skv-headless/react-native-scrollable-tab-view/blob/master/Example/FacebookExample.js).
 
-##Extra
+## Extra
 Add new component is rounded scrollable tab **`ScrollableTabItem`** with extra props below:
 - **`tabColor`**
 - **`tabSelectedColor`**
